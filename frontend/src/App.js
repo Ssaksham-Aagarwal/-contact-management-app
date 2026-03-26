@@ -10,7 +10,7 @@ function App() {
   const [search, setSearch] = useState("");
   const [dark, setDark] = useState(false);
 
-  const API = "http://localhost:5000/api/contacts";
+  const API = "https://contact-management-app-gls7.onrender.com/api/contacts";
 
   const fetchContacts = async () => {
     const res = await axios.get(API);
