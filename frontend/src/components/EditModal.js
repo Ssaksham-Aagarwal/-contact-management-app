@@ -3,7 +3,7 @@ import axios from "axios";
 
 function EditModal({ contact, setShow, fetchContacts }) {
   const [form, setForm] = useState(contact);
-  const API = "http://localhost:5000/api/contacts";
+  const API = "https://contact-management-app-gls7.onrender.com/api/contacts";
 
   const update = async () => {
     await axios.put(`${API}/${contact._id}`, form);

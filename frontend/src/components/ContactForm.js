@@ -4,7 +4,7 @@ import axios from "axios";
 function ContactForm({ fetchContacts }) {
   const [form, setForm] = useState({ name: "", email: "", phone: "" });
 
-  const API = "http://localhost:5000/api/contacts";
+  const API = "https://contact-management-app-gls7.onrender.com/api/contacts";
 
   const handleSubmit = async () => {
     try {

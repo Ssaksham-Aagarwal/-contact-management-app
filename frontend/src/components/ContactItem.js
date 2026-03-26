@@ -4,7 +4,7 @@ import EditModal from "./EditModal";
 
 function ContactItem({ contact, fetchContacts }) {
   const [show, setShow] = useState(false);
-  const API = "http://localhost:5000/api/contacts";
+  const API = "https://contact-management-app-gls7.onrender.com/api/contacts";
 
   const deleteContact = async () => {
     await axios.delete(`${API}/${contact._id}`);
